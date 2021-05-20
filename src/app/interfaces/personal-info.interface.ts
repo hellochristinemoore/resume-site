@@ -4,7 +4,9 @@
 export interface PersonalInfo {
   surname: string;
   name: string;
-  dateOfBirth: number;
+  yearOfBirth: number;
+  monthOfBirth: number;
+  dayOfBirth: number;
   email: string;
   phoneNumber: number;
 }

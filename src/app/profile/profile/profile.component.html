@@ -1,0 +1,18 @@
+<aside>
+  <div class="content-wrapper">
+    <figure>
+      <img src="../assets/images/profile.jpeg" alt="Profile image" />
+    </figure>
+    <div *ngIf="personalInfo" class="personal-info">
+      <p><strong>Surname:</strong> {{ personalInfo.surname }}</p>
+      <P><strong>Name:</strong> {{ personalInfo.name }}</P>
+      <p>
+        <strong>Date Of Birth:</strong> {{ personalInfo.yearOfBirth }} /
+        {{ personalInfo.monthOfBirth }} /
+        {{ personalInfo.dayOfBirth }}
+      </p>
+      <p><strong>Email:</strong> {{ personalInfo.email }}</p>
+      <p><strong>Number:</strong> +{{ personalInfo.phoneNumber }}</p>
+    </div>
+  </div>
+</aside>

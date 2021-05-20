@@ -1,1 +1,16 @@
+<body>
+  <aside class="profile">
+    <app-profile [personalInfo]="personalInfo"></app-profile>
+  </aside>
 
+  <main>
+    <section class="experience-log">
+      <h1>Work Experience</h1>
+      <ng-container *ngFor="let experience of experiences">
+        <!--*ngFor structural directive that renders a template for each item in a collection / output an array-->
+        <app-experience [experience]="experience"></app-experience>
+        <!--Use property binding to bind the item property in the child to the experience property of the parent-->
+      </ng-container>
+    </section>
+  </main>
+</body>

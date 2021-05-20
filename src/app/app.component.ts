@@ -12,7 +12,7 @@ import { ExperienceService } from './services/experience.service';
 export class AppComponent implements OnInit {
   title = 'resume-site';
   personalInfo: PersonalInfo;
-  experiences: Experience[];
+  experiences: Experience[]; //<== the plural variable name indicates multiple arrays
 
   //Dependency Inject PersonalInfoService & ExperienceService below
   constructor(
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.getPersonalInfoService();
     this.getExperienceService();
-    //console.log(this.personalInfo);
+    //console.log(this.personalInfo); <== check if service output correctly
     //console.log(this.experiences);
   }
 }
